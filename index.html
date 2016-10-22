@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Solar Panel Classification Using Satellite Imagery by alexhalcomb</title>
+    <title>Using Satellite Imagery to Identify Solar Panels by alexhalcomb</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,30 +11,33 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">Solar Panel Classification Using Satellite Imagery</h1>
+      <h1 class="project-name">Using Satellite Imagery to Identify Solar Panels</h1>
       <h2 class="project-tagline">Capstone Project for General Assembly Data Science Immersive</h2>
     </section>
 
     <section class="main-content">
       <h1>
-<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h1>
-
-<h2>
-<a id="problem-statement" class="anchor" href="#problem-statement" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Problem Statement</h2>
+<a id="business-problem" class="anchor" href="#business-problem" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Business Problem:</h1>
 
 <p>Over the last decade, U.S. residential and commercial solar panel installations have grown dramatically. This is in large part due to the growing concerns regarding climate change, but also because of lower costs. Solar installation costs have fallen over 70% in the last 10 years and continue to improve. </p>
 
-<p>The full extent of this growth, however, is not well understood as the data for residential and commercial solar installations is typically reported only at the level of the state. Having a more granular dataset would benefit a wide variety of parties, including utilities, policy makers, and solar developers. Utilities, in particular, will face many challenges safely integrating such a high amount of distributed generation and therefore will benefit greatly from understanding the magnitude and distribution of these resources. </p>
+<p>Chart</p>
 
-<p>For this project, high resolution satellite imagery and machine learning techniques will be used to identify where solar panels are installed. </p>
+<p>The full extent of this growth, however, is not well understood as the data for residential and commercial solar installations is typically reported only at the level of the state. Having a more granular dataset would benefit a number of parties, including utilities, policy makers, and solar developers. Utilities, in particular, will face many challenges safely integrating such a high amount of distributed generation and therefore will benefit greatly from understanding the magnitude and distribution of these resources. </p>
 
-<h2>
-<a id="description-of-data" class="anchor" href="#description-of-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description of Data</h2>
+<p>The goal of this project is to apply machine learning techniques to high resolution satellite imagery in order to identify where solar panels are installed. </p>
 
-<p>This analysis will leverage a dataset created by members of the Energy Data Analytics Lab at Duke University. The dataset contains geospatial data and border vertices for over 19,000 solar panels, located in the California cities of Fresno, Stockton, Oxnard, and Modesto. The satellite images are part of the USGS collection of High Resolution Orthoimagery (HRO). The majority of the raw images are 5000x5000 pixels, at a resolution of 0.3m/pixel. </p>
+<h1>
+<a id="description-of-data" class="anchor" href="#description-of-data" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description of Data</h1>
 
-<p>Link to Dataset:
-<a href="https://figshare.com/collections/Full_Collection_Distributed_Solar_Photovoltaic_Array_Location_and_Extent_Data_Set_for_Remote_Sensing_Object_Identification/3255643/1">https://figshare.com/collections/Full_Collection_Distributed_Solar_Photovoltaic_Array_Location_and_Extent_Data_Set_for_Remote_Sensing_Object_Identification/3255643/1</a></p>
+<p>In this analysis, I will utilize a dataset created by the Energy Data Analytics Lab at Duke University. The dataset contains geospatial data and border vertices for over 19,000 solar panels, located in the California cities of Fresno, Stockton, Oxnard, and Modesto. The satellite images are part of the USGS collection of High Resolution Orthoimagery (HRO). The majority of the raw images are 5000x5000 pixels, at a resolution of 0.3m/pixel. Although the USGS High Resolution database does not encompass the entire U.S., it does cover many urban areas in the country and continues to grow as the agency acquires new data.  </p>
+
+<p>The full dataset of images and annotations can be found <a href="https://figshare.com/collections/Full_Collection_Distributed_Solar_Photovoltaic_Array_Location_and_Extent_Data_Set_for_Remote_Sensing_Object_Identification/3255643/1">here</a>. </p>
+
+<h1>
+<a id="dataset-analysis" class="anchor" href="#dataset-analysis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dataset Analysis</h1>
+
+<p><img src="https://github.com/alexhalcomb/alexhalcomb.github.io/blob/master/assets/dataset_hist.png" alt=""></p>
 
 <h1>
 <a id="section-4-segment-feature-extraction" class="anchor" href="#section-4-segment-feature-extraction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Section 4: Segment Feature Extraction</h1>
