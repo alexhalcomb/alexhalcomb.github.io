@@ -21,7 +21,7 @@
 
 <p>Over the last decade, U.S. residential and commercial solar panel installations have grown dramatically. This is in large part due to the growing concerns regarding climate change, but also because of lower costs. Solar installation costs have fallen over 70% in the last 10 years and continue to improve. </p>
 
-<p><img src="https://raw.githubusercontent.com/alexhalcomb/DSI-Capstone-Project/master/assets/solar-price-installation-chart.png" alt="TBD"></p>
+<p><img src="https://raw.githubusercontent.com/alexhalcomb/DSI-Capstone-Project/master/assets/solar-price-installation-chart.jpg" alt="TBD"></p>
 
 <p>The full extent of this growth, however, is not well understood as the data for residential and commercial solar installations is typically reported only at the level of the state. Having a more granular dataset would benefit a number of parties, including utilities, policy makers, and solar developers. Utilities, in particular, will face many challenges safely integrating such a high amount of distributed generation and therefore will benefit greatly from understanding the magnitude and distribution of these resources. </p>
 
@@ -37,7 +37,8 @@
 <h1>
 <a id="dataset-analysis" class="anchor" href="#dataset-analysis" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dataset Analysis</h1>
 
-<p><img src="https://raw.githubusercontent.com/alexhalcomb/DSI-Capstone-Project/master/assets/dataset_hist.png" alt="TBD">
+<p>Below 
+<img src="https://raw.githubusercontent.com/alexhalcomb/DSI-Capstone-Project/master/assets/dataset_hist.png" alt="TBD">
 <img src="https://raw.githubusercontent.com/alexhalcomb/DSI-Capstone-Project/master/assets/dataset_hist_sub.png" alt="TBD"></p>
 
 <h1>
@@ -48,12 +49,12 @@
 <p>In this analysis, features will mostly consist of summary statistics for each color channel (e.g. mean, min, max, variance) but will also include other descriptive values such as area and perimeter.</p>
 
 <h1>
-<a id="section-5-building-a-dataset" class="anchor" href="#section-5-building-a-dataset" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Section 5: Building a Dataset</h1>
+<a id="building-a-dataset" class="anchor" href="#building-a-dataset" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Building a Dataset</h1>
 
 <p>With the feature extraction functions in place, the next step in the processing pipeline is to define the regions containing solar panels and the regions without any solar panels. Once this mask is defined, features can be calculated, assigned a class, and aggregated together in order to train a classifier. </p>
 
 <h1>
-<a id="section-6-classification" class="anchor" href="#section-6-classification" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Section 6: Classification</h1>
+<a id="classification" class="anchor" href="#classification" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Classification</h1>
 
 <h3>
 <a id="logistic-regression" class="anchor" href="#logistic-regression" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Logistic Regression</h3>
@@ -84,7 +85,7 @@
 <p>Around 20% of the solar panels are being misclassified as 'not a solar panel' using the current model. I will examine the false negatives with the lowest predicted probabilities in order to better understand where the model is failing the worst.</p>
 
 <h1>
-<a id="section-7-conclusion-and-next-steps" class="anchor" href="#section-7-conclusion-and-next-steps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Section 7: Conclusion and Next Steps</h1>
+<a id="conclusion-and-next-steps" class="anchor" href="#conclusion-and-next-steps" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Conclusion and Next Steps</h1>
 
 <p>There are a number of areas for further improvement. Specifically, it's clear that there two types of solar panels that have proven difficult to detect. Panels that appear very light in color, and those that show significant grid lines. In the first instance, the panels tend to blend in with the roof of the building and are therefore difficult to distinguish. In the second case, the color values and variance are skewed relative to the rest of the dataset.</p>
 
